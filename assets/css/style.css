@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Josefin+Sans:wght@400;700&family=Jost:wght@400;700&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+:root {
+    --nav-color: #3b3b3b;
+    --primary-color: #202020;
+    --secondary-color: #11191f;
+    --nav-items-color: #ffe8cb;
+    --borders-color: #dba36a;
+    --yellow-heading-color: #dfb57a;
+    --primary-paragraph-color: #b4b4b4;
+    --secondary-paragraph-color: #8f8c8a;
+    --services-section-color: #f5f1ec;
+    --brands-section-color: #ffe9d1;
+}
+
+/* ASSETS */
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: 20px;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-color);
+    align-items: center;
+    height: 84px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-bottom: 0.1px solid whitesmoke;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+}
+
+nav.navbar img.nav-logo {
+    width: 70%;
+    width: 10vw;
+    height: auto;
+}
+
+nav.navbar ul.nav-items {
+    display: flex;
+    margin-left: 250px;
+}
+
+nav.navbar ul.nav-items li a {
+    text-decoration: none;
+    color: var(--nav-items-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    padding: 30px 15px;
+}
+
+nav.navbar ul.nav-items li a.active {
+    border-bottom: 3px solid var(--borders-color);
+}
+
+nav.navbar ul.nav-items li a:hover {
+    border-bottom: 3px solid var(--borders-color);
+}
+
+nav.navbar ul.nav-items li {
+    list-style: none;
+}
+
+nav.navbar button.btn a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+nav.navbar button.btn {
+    border: 1px solid var(--borders-color);
+    border-radius: 5px;
+    padding: 1.5vw 2vw;
+    background-color: transparent;
+}
+
+/* HERO SECTION */
+
+section.hero-section {
+    height: 95vh;
+    background-image: url(../images/hero-img.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.hero-section div.container {
+    padding-top: 80px;
+}
+
+section.hero-section div.hero-content h3.yellow-heading {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 3vw;
+    color: var(--yellow-heading-color);
+}
+
+section.hero-section div.hero-content h1.main-heading {
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 7vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+section.hero-section div.hero-content button.btn a {
+    text-decoration: none;
+    color: var(--nav-items-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+section.hero-section div.hero-content button.btn {
+    border: 2px solid var(--borders-color);
+    border-radius: 5px;
+    padding: 1.5vw 2vw;
+    background-color: transparent;
+    margin-top: 40px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+section.hero-section div.hero-content button.btn:hover {
+    transform: translateY(-10px);
+}
+
+/* ABOUT SECTION */
+
+section.about-section {
+    background-color: var(--primary-color);
+}
+
+section.about-section div.about-content {
+    display: flex;
+    gap: 70px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+section.about-section div.about-content div.image-area img {
+    width: 45vw;
+    height: auto;
+}
+
+section.about-section div.about-content div.content-area h3.yellow-heading {
+    color: var(--yellow-heading-color);
+    font-size: 2.8vw;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: 400;
+}
+
+section.about-section div.about-content div.content-area h1.main-heading {
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+section.about-section div.about-content div.content-area p.p1 {
+    color: var(--primary-paragraph-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+section.about-section div.about-content div.content-area p.p2 {
+    color: var(--secondary-paragraph-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+section.about-section div.about-content div.content-area button.btn a {
+    text-decoration: none;
+    color: var(--nav-items-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+section.about-section div.about-content div.content-area button.btn {
+    border: 2px solid var(--borders-color);
+    border-radius: 5px;
+    padding: 1.5vw 2vw;
+    background-color: transparent;
+    margin-top: 25px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+section.about-section div.about-content div.content-area button.btn:hover {
+    transform: translateY(-10px);
+}
+
+/* ATMOSPHERE SECTION */
+
+section.atmosphere-section {
+    background: var(--secondary-color);
+    padding: 60px 0px;
+}
+
+section.atmosphere-section div.content ul.qualities {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+section.atmosphere-section div.content ul.qualities li img {
+    border-radius: 50%;
+    padding: 30px;
+    background-color: black;
+}
+
+section.atmosphere-section div.content ul.qualities li {
+    text-align: center;
+}
+
+section.atmosphere-section div.content ul.qualities li h1 {
+    color: var(--nav-items-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.7vw;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+section.atmosphere-section div.content ul.qualities li h1#third {
+    margin-top: 47px;
+}
+
+section.atmosphere-section div.content ul.qualities li p {
+    color: var(--nav-items-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+/* DISCOVER SECTION */
+
+
+section.discover-section {
+    background-color: var(--primary-color);
+}
+
+section.discover-section div.discover-content {
+    display: flex;
+    gap: 70px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+section.discover-section div.discover-content div.image-area img {
+    width: 45vw;
+    height: auto;
+}
+
+section.discover-section div.discover-content div.content-area h3.yellow-heading {
+    color: var(--yellow-heading-color);
+    font-size: 2.8vw;
+    font-family: 'Sacramento', sans-serif;
+    font-weight: 400;
+}
+
+section.discover-section div.discover-content div.content-area h1.main-heading {
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+section.discover-section div.discover-content div.content-area p.p1 {
+    color: var(--primary-paragraph-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+section.discover-section div.discover-content div.content-area ul li {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    list-style: none;
+    line-height: 2.5em;
+}
+
+section.discover-section div.discover-content div.content-area button.btn a {
+    text-decoration: none;
+    color: var(--nav-items-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+section.discover-section div.discover-content div.content-area button.btn {
+    border: 2px solid var(--borders-color);
+    border-radius: 5px;
+    padding: 1.5vw 2vw;
+    background-color: transparent;
+    margin-top: 25px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+section.discover-section div.discover-content div.content-area button.btn:hover {
+    transform: translateY(-10px);
+}
+
+section.discover-section div.discover-content div.content-area ul li i {
+    color: var(--yellow-heading-color);
+    margin-right: 10px;
+}
+
+/* SERVICES SECTION */
+
+section.services-section {
+    padding: 50px 0px;
+    background-color: var(--services-section-color);
+}
+
+section.services-section div.services-content ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.services-section div.services-content ul li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+section.services-section div.services-content ul li img {
+    width: 67px;
+    height: 67px;
+}
+
+section.services-section div.services-content ul li p span {
+    font-size: 1.7vw;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+section.services-section div.services-content ul li p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #8F8C8A;
+    margin-right: 1.3vw;
+}
+
+/* BRAND SECTIONN */
+
+section.brands-section {
+    padding: 50px 0px;
+    background-color: var(--brands-section-color);
+}
+
+section.brands-section div.brands-content ul {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+
+}
+
+section.brands-section div.brands-content ul li {
+    list-style: none;
+}
+
+section.brands-section div.brands-content ul li img {
+    width: 12vw;
+    height: auto;
+}
+
+/* CHEFS SECTION */
+
+section.chefs-section {
+    background-color: #11191F;
+    padding: 60px 0px;
+}
+
+section.chefs-section div.chefs-content h2 {
+    color: var(--yellow-heading-color);
+    font-family: 'Sacramento', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+section.chefs-section div.chefs-content h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.chefs-section div.chefs-content ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+section.chefs-section div.chefs-content ul li {
+    list-style: none;
+}
+
+section.chefs-section div.chefs-content ul li img {
+    width: 25vw;
+    height: auto;
+    border-radius: 20px;
+}
+
+section.chefs-section div.chefs-content ul li h3 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    padding: 10px 0px;
+}
+
+section.chefs-section div.chefs-content ul li h4 {
+    color: #8F8C8A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+section.chefs-section div.chefs-content ul li i {
+    padding: 10px;
+    border-radius: 50%;
+    color: #818A91;
+    background-color: #F5F1EC;
+    margin: 0px 3px;
+}
+
+section.chefs-section div.chefs-content ul li i:hover {
+    background-color: var(--borders-color);
+    color: white;
+}
+
+/* FOOTER AREA */
+
+footer {
+    background-color: #3b3b3b;
+    padding: 50px 0px;
+}
+
+footer div.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.footer-content div.logo-area {
+    margin-right: -30px;
+}
+
+footer div.footer-content div.logo-area a img {
+    width: 20vw;
+    height: auto;
+}
+
+footer div.footer-content div.logo-area p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: var(--nav-items-color);
+    padding: 30px 0px;
+}
+
+footer div.footer-content div.logo-area i {
+    padding: 10px;
+    color: var(--yellow-heading-color);
+    border: 1px solid var(--borders-color);
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+
+footer div.footer-content div.pages-area h1 {
+    font-family: 'Roboto';
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: var(--nav-items-color);
+    padding-bottom: 40px;
+}
+
+footer div.footer-content div.pages-area ul li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+footer div.footer-content div.pages-area ul li a {
+    text-decoration: none;
+    color: var(--nav-items-color);
+}
+
+footer div.footer-content div.contact-area h1 {
+    font-family: 'Roboto';
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: var(--nav-items-color);
+    padding-bottom: 40px;
+}
+
+footer div.footer-content div.contact-area p {
+    color: var(--nav-items-color);
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+footer div.footer-content div.gallery-area h1 {
+    font-family: 'Roboto';
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: var(--nav-items-color);
+    padding-bottom: 40px;
+}
+
+footer div.footer-content div.gallery-area ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer div.footer-content div.gallery-area ul li img {
+    width: 55px;
+    height: 36px;
+    border-radius: 5px;
+    margin: 2px 2px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1024px) {
+    nav.navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section.services-section div.services-content ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.brands-section {
+        padding: 30px 50px;
+    }
+
+    section.brands-section div.brands-content ul {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    footer div.footer-content div.logo-area p {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.hero-section div.hero-content h3.yellow-heading {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    section.hero-section div.hero-content h1.main-heading {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    section.hero-section div.hero-content button.btn a {
+        text-align: center;
+    }
+
+    section.hero-section div.hero-content button.btn {
+        text-align: center;
+        position: absolute;
+        margin-top: 100px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-40%, -40%);
+    }
+
+    section.about-section div.about-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 60px;
+    }
+
+    section.about-section div.about-content div.image-area img {
+        width: 80vw;
+    }
+
+    section.about-section div.about-content div.content-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.about-section div.about-content div.content-area h3.yellow-heading {
+        font-size: 7vw;
+    }
+
+    section.about-section div.about-content div.content-area h1.main-heading {
+        font-size: 8vw;
+    }
+
+    section.about-section div.about-content div.content-area p.p1 {
+        font-size: 3vw;
+    }
+
+    section.about-section div.about-content div.content-area p.p2 {
+        font-size: 2.5vw;
+    }
+
+    section.about-section div.about-content div.content-area button.btn a {
+        font-size: 2.3vw;
+    }
+
+    section.atmosphere-section div.content ul.qualities {
+        flex-direction: column;
+        padding: 20px 60px;
+    }
+
+    section.atmosphere-section div.content ul.qualities li h1 {
+        font-size: 4vw;
+    }
+
+    section.atmosphere-section div.content ul.qualities li p {
+        font-size: 3vw;
+    }
+
+    section.discover-section div.discover-content div.image-area img {
+        width: 80vw;
+    }
+
+    section.discover-section div.discover-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px 60px;
+    }
+
+    section.discover-section div.discover-content div.content-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.discover-section div.discover-content div.content-area h3.yellow-heading {
+        font-size: 7vw;
+    }
+
+    section.discover-section div.discover-content div.content-area h1.main-heading {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    section.discover-section div.discover-content div.content-area p.p1 {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    section.discover-section div.discover-content div.content-area ul li {
+        font-size: 2vw;
+    }
+
+    section.services-section div.services-content {
+        padding: 20px 60px;
+    }
+
+    section.services-section div.services-content ul {
+        flex-direction: column;
+    }
+
+    section.services-section div.services-content ul li p span {
+        font-size: 3vw;
+    }
+
+    section.brands-section {
+        display: none;
+    }
+
+    section.chefs-section div.chefs-content h2 {
+        font-size: 6vw;
+    }
+
+    section.chefs-section div.chefs-content h1 {
+        font-size: 7vw;
+    }
+
+    section.chefs-section div.chefs-content ul {
+        flex-direction: column;
+    }
+
+    section.chefs-section div.chefs-content ul li img {
+        width: 70vw;
+    }
+
+    footer div.footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 60px;
+    }
+
+    footer div.footer-content div.logo-area {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div.footer-content div.logo-area a img {
+        width: 50vw;
+    }
+
+    footer div.footer-content div.logo-area p {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    footer div.footer-content div.logo-area .icons {
+        margin-bottom: 30px;
+    }
+
+    footer div.footer-content div.logo-area i {
+        text-align: center;
+        margin-bottom: 20px;
+        display: inline;
+    }
+
+    footer div.footer-content div.pages-area {
+        display: none;
+    }
+
+    footer div.footer-content div.contact-area {
+        display: none;
+    }
+
+    footer div.footer-content div.gallery-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div.footer-content div.gallery-area h1 {
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 30px;
+    }
+
+    footer div.footer-content div.gallery-area ul li img {
+        width: 25vw;
+        height: auto;
+    }
+}
