@@ -599,15 +599,20 @@ footer div.footer-content div.gallery-area ul li img {
 
     section.hero-section div.hero-content button.btn a {
         text-align: center;
+        font-size: 3vw;
     }
 
     section.hero-section div.hero-content button.btn {
         text-align: center;
         position: absolute;
-        margin-top: 100px;
+        margin-top: 10vw;
         top: 40%;
         left: 50%;
         transform: translate(-40%, -40%);
+    }
+
+    section.hero-section div.hero-content button.btn:hover {
+        transform: none;
     }
 
     section.about-section div.about-content {
@@ -624,6 +629,7 @@ footer div.footer-content div.gallery-area ul li img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 8vw;
     }
 
     section.about-section div.about-content div.content-area h3.yellow-heading {
@@ -636,14 +642,20 @@ footer div.footer-content div.gallery-area ul li img {
 
     section.about-section div.about-content div.content-area p.p1 {
         font-size: 3vw;
+        text-align: center;
     }
 
     section.about-section div.about-content div.content-area p.p2 {
         font-size: 2.5vw;
+        text-align: center;
+    }
+
+    section.about-section div.about-content div.content-area button.btn {
+        margin-top: 7vw;
     }
 
     section.about-section div.about-content div.content-area button.btn a {
-        font-size: 2.3vw;
+        font-size: 3vw;
     }
 
     section.atmosphere-section div.content ul.qualities {
@@ -673,6 +685,7 @@ footer div.footer-content div.gallery-area ul li img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 7vw;
     }
 
     section.discover-section div.discover-content div.content-area h3.yellow-heading {
@@ -691,6 +704,10 @@ footer div.footer-content div.gallery-area ul li img {
 
     section.discover-section div.discover-content div.content-area ul li {
         font-size: 2vw;
+    }
+
+    section.discover-section div.discover-content div.content-area button.btn a {
+        font-size: 3vw;
     }
 
     section.services-section div.services-content {
@@ -777,7 +794,7 @@ footer div.footer-content div.gallery-area ul li img {
     }
 
     footer div.footer-content div.gallery-area ul li img {
-        width: 25vw;
+        width: 22vw;
         height: auto;
     }
 }
